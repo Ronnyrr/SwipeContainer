@@ -14,11 +14,13 @@ export default class SwipeContainer {
 		this.changeProgression = this.changeProgression.bind(this);
 
 		this.getByClass = this.getByClass.bind(this);
+
+		this.init();
 	}
 
 	init() {
 		this.animateElement = this.getByClass(this.el, 'swipe-container__contents');
-		
+
 		if (document.querySelector('.swipe-container--hotel-usp')) {
 			this.calculatedHeight = document.querySelector('.swipe-container--hotel-usp').offsetHeight;
 			document.querySelector('.swipe-container--hotel-usp').setAttribute('style', 'min-height:' + this.calculatedHeight + 'px');
