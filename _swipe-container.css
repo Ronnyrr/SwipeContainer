@@ -1,0 +1,55 @@
+.swipe-container {
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  user-select: none;
+}
+.swipe-container__contents {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  transition: margin .2s;
+}
+.swipe-container__contents--vertical {
+  align-items: stretch;
+  flex-direction: column;
+  padding: 20px;
+}
+.swipe-container__progress {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.swipe-container__progress--bar {
+  height: 4px;
+  background: #134F63;
+  border-radius: 5px;
+}
+.swipe-container__progress--bar > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #c0e3eb;
+  border-radius: 5px;
+  transition: left .2s;
+}
+.swipe-container__progress--dots {
+  height: 8px;
+  margin-top: 10px;
+  text-align: center;
+}
+.swipe-container__progress--dots > div.progress-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 8px;
+  background: #c0e3eb;
+  border-radius: 50%;
+}
+.swipe-container__progress--dots > div.progress-dot--active {
+  background: #134F63;
+}
+.swipe-container__progress--dots > div.progress-dot:last-child {
+  margin-right: 0;
+}
