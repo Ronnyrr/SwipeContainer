@@ -5,6 +5,12 @@ CSS available in SCSS and plain.
 
 ## Usage
 
+`<div className="swipe-container">
+	<div className="swipe-container__contents">
+		{repeatable_element}
+	</div>
+</div>`
+
 new SwipeContainer(document.querySelector('.swipe-container'), 'dots');
 
 ## Navigation types

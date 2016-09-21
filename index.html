@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>SwipeContainer example</title>
+
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css" />
+	<link rel="stylesheet" href="_swipe-container.css" />
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+
+		h1 {
+			font-size: 20px;
+			margin: 15px 0 -5px 10px;
+		}
+
+		.bar-example {
+			margin-bottom: 50px;
+		}
+
+		.example-slide {
+			min-width: 220px;
+			height: 220px;
+			margin-right: 20px;
+			background: grey;
+		}
+
+		.example-slide:last-child {
+			margin-right: 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>Navigation with bar</h1>
+	<div class="swipe-container bar-example">
+		<div class="swipe-container__contents">
+			<div class="example-slide"></div>
+			<div class="example-slide"></div>
+			<div class="example-slide"></div>
+		</div>
+	</div>
+
+	<h1>Navigation with dots</h1>
+	<div class="swipe-container dots-example">
+		<div class="swipe-container__contents">
+			<div class="example-slide"></div>
+			<div class="example-slide"></div>
+			<div class="example-slide"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="SwipeContainer.js"></script>
+	<script type="text/javascript">
+		new SwipeContainer(document.querySelector('.bar-example'), 'bar');
+		new SwipeContainer(document.querySelector('.dots-example'), 'dots');
+	</script>
+</body>
+</html>
