@@ -1,7 +1,7 @@
 ## SwipeContainer
 
-Plain Javascript class using ES6 to initialize a swipe container.
-CSS available in SCSS and plain.
+Javascript class (ES6) using to initialize a swipe container for mobile and desktop.
+Two different navigation methods available. Styling available in CSS and SCSS
 
 ## Usage
 
